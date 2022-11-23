@@ -20,6 +20,12 @@ h1 {
     font-family: 'Patrick Hand', cursive;
 }
 
+h1 span {
+
+    color:#1E7318;
+
+}
+
 .logo1 {
     padding-top: 30px;
     padding-bottom: 15px;
@@ -79,4 +85,9 @@ border-top-right-radius: 10px;
 border-bottom-left-radius: 10px;
 opacity: 0.9;
 
+}
+
+.act-list {
+
+line-height: 25px;
 }
