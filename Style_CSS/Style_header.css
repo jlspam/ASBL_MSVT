@@ -5,12 +5,11 @@
 /* MENU PRINCIPALE */
 
 #menu {
-    background: #0099CC;
-    background: linear-gradient(to bottom, #64BF62, #1E7318);
+    background: linear-gradient(to bottom, #49af47, #176d11);
     color: #FFF;
-    height: 36px;
+    height: 40px;
     padding-left: 18px;
-    border-radius: 28px;
+    border-radius: 28px;;
 }
 
 #menu ul,
@@ -58,6 +57,23 @@
     position: absolute;
     left: 35px
 }
+
+#menu .navright {
+position: absolute;
+left: 950px;
+width: 50%;
+} 
+
+.navright li a img {
+width: 25px;
+position: relative;
+top: 7px;
+
+}
+
+/* .tabs-inner .widget ul {
+margin-right: 0px; margin-left: 0px;
+} */
 
 /* MENU (EFFETS/CLIQUE) */
 

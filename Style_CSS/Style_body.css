@@ -5,7 +5,7 @@
 body {
 
 font-family: 'Cabin', sans-serif;
-background-image: url("/pic/bg1.png");
+background-image: url("/pic/bg2.png");
 background-repeat: no-repeat;
 background-size: cover;
 background-color:rgba(0, 0, 0, 0.2);
@@ -21,7 +21,6 @@ h1 {
 }
 
 h1 span {
-
     color:#1E7318;
 
 }
@@ -32,16 +31,16 @@ h1 span {
 }
 
 .presentation {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
     text-decoration: none;
     text-align: justify;
     /* margin-left: 50px; */
 }
 
 .Centre{
-  text-align: center;
-  padding-top: 15px;
+    text-align: center;
+    padding-top: 15px;
 }
 
 .GreenButton {
@@ -90,4 +89,10 @@ opacity: 0.9;
 .act-list {
 
 line-height: 25px;
+}
+
+.act-list a {
+
+text-decoration: underline;
+color: #0c4613;
 }
