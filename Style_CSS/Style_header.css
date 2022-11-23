@@ -7,7 +7,7 @@
 #menu {
     background: linear-gradient(to bottom, #49af47, #176d11);
     color: #FFF;
-    height: 40px;
+    height: 42px;
     padding-left: 18px;
     border-radius: 28px;;
 }
@@ -31,7 +31,7 @@
 
 #menu a {
     display: block;
-    line-height: 36px;
+    line-height: 42px;
     padding: 0 14px;
     text-decoration: none;
     color: #FFFFFF;
