@@ -285,5 +285,13 @@ h2 {
     padding-left: 30px;
   }
 }
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background-color: #e8ebee;
+  color: #1E7318;
+  border-radius: 15px;
+}
 
 /*# sourceMappingURL=Style.css.map */
