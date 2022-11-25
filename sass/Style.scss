@@ -17,6 +17,7 @@ h1 {
     padding-bottom: 20px;
     font-family: 'Patrick Hand', cursive;
     letter-spacing: 0.5px;
+    padding-top: 10px;
 
     span {
         color: #1E7318;
@@ -28,6 +29,62 @@ h2 {
     text-decoration: underline;
     text-indent: 15px;
 
+}
+
+.historique .pres {
+
+    #historique1 {
+        padding-top: 70px;
+        @extend .presentation;
+    }
+
+    #historique2 {
+        padding-top: 15px;
+        @extend .presentation;
+    }
+
+    p {
+
+        @extend .presentation;
+        line-height: 24px;
+    }
+
+    p #histo1 {
+
+        @extend .presentation;
+        float: right;
+        padding-top: 25px;
+        width: 300px;
+
+    }
+
+    p #histo2 {
+
+        @extend .presentation;
+        float: left;
+        width: 250px;
+    }
+
+    p #histo3 {
+
+        @extend .presentation;
+        float: right;
+        width: 250px;
+    }
+
+    p span {
+
+        text-transform: capitalize;
+    }
+
+    ol li {
+
+        @extend .presentation;
+        margin-top: 10px;
+        line-height: 24px;
+        margin-left: 80px;
+        margin-right: 25px;
+    }
 }
 
 #event {
@@ -55,7 +112,6 @@ h2 {
 .presentation {
     margin-left: 80px;
     margin-right: 80px;
-    text-decoration: none;
     text-align: justify;
     /* margin-left: 50px; */
 }

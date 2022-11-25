@@ -16,6 +16,7 @@ h1 {
   padding-bottom: 20px;
   font-family: "Patrick Hand", cursive;
   letter-spacing: 0.5px;
+  padding-top: 10px;
 }
 h1 span {
   color: #1E7318;
@@ -24,6 +25,38 @@ h1 span {
 h2 {
   text-decoration: underline;
   text-indent: 15px;
+}
+
+.historique .pres #historique1 {
+  padding-top: 70px;
+}
+.historique .pres #historique2 {
+  padding-top: 15px;
+}
+.historique .pres p {
+  line-height: 24px;
+}
+.historique .pres p #histo1 {
+  float: right;
+  padding-top: 25px;
+  width: 300px;
+}
+.historique .pres p #histo2 {
+  float: left;
+  width: 250px;
+}
+.historique .pres p #histo3 {
+  float: right;
+  width: 250px;
+}
+.historique .pres p span {
+  text-transform: capitalize;
+}
+.historique .pres ol li {
+  margin-top: 10px;
+  line-height: 24px;
+  margin-left: 80px;
+  margin-right: 25px;
 }
 
 #event {
@@ -43,10 +76,9 @@ h2 {
   padding-top: 30px;
 }
 
-.presentation {
+.presentation, .historique .pres #historique1, .historique .pres #historique2, .historique .pres p, .historique .pres p #histo1, .historique .pres p #histo2, .historique .pres p #histo3, .historique .pres ol li {
   margin-left: 80px;
   margin-right: 80px;
-  text-decoration: none;
   text-align: justify;
   /* margin-left: 50px; */
 }
