@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
 
 body {
 
@@ -8,8 +9,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.2);
-
-
 }
 
 h1 {
@@ -17,6 +16,7 @@ h1 {
     font-size: 150%;
     padding-bottom: 20px;
     font-family: 'Patrick Hand', cursive;
+    letter-spacing: 0.5px;
 
     span {
         color: #1E7318;
@@ -25,13 +25,31 @@ h1 {
 
 h2 {
 
+    text-decoration: underline;
+    text-indent: 15px;
+
+}
+
+#event {
+
     text-align: center;
     padding-top: 15px;
 }
 
-.logo1 {
+.logo img {
+
+    display: block;
+    margin: auto;
+    padding-top: 70px;
+
+}
+
+.img img {
+
+    display: block;
+    margin: auto;
     padding-top: 30px;
-    padding-bottom: 15px;
+
 }
 
 .presentation {
@@ -64,21 +82,20 @@ h2 {
     text-shadow: 0px -1px 0px #2f6627;
     text-align: center;
     margin: auto;
-}
 
-.GreenButton:hover {
-    background: linear-gradient(to bottom, #10722a 5%, #209940 100%);
-    background-color: #10722a;
-}
+    &:hover {
+        background: linear-gradient(to bottom, #10722a 5%, #209940 100%);
+        background-color: #10722a;
+    }
 
-.GreenButton:active {
-    position: relative;
-    top: 1px;
+    &:active {
+        position: relative;
+        top: 1px;
+    }
 }
 
 #paysage1 {
 
-    /* border: 2px solid #10722a ; */
     -webkit-border-radius: 50px;
     -webkit-border-top-right-radius: 10px;
     -webkit-border-bottom-left-radius: 10px;
@@ -95,14 +112,13 @@ h2 {
 .act-list {
 
     line-height: 25px;
+    list-style-image: url("../pic/Icon/list-style.png");
 
     a {
         text-decoration: underline;
         color: #0c4613;
     }
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
 
 /************************ HEADER ************************/
 
@@ -114,7 +130,9 @@ h2 {
     height: 42px;
     padding-left: 18px;
     border-radius: 28px;
-    ;
+    position: fixed;
+    width: 97%;
+    z-index: 99;
 
     ul {
         width: 100%;
@@ -128,6 +146,11 @@ h2 {
         a:hover {
             color: #fcc100;
             background: #F2F2F2;
+            border-radius: 3px;
+        }
+
+        &:hover ul.sub-menus {
+            display: block
         }
     }
 
@@ -181,6 +204,7 @@ h2 {
         position: absolute;
         z-index: 99;
         display: none;
+        border-radius: 3px;
 
         li {
             display: block;
@@ -190,16 +214,12 @@ h2 {
         a {
             color: #FFFFFF;
             font-size: 16px;
-        }
 
-        a:hover {
-            background: #E3FFE0;
-            color: #1E7318;
+            &:hover {
+                background: #E3FFE0;
+                color: #1E7318;
+            }
         }
-    }
-
-    li:hover ul.sub-menus {
-        display: block
     }
 
     label:before {
@@ -226,7 +246,6 @@ h2 {
 @media screen and (max-width: 800px) {
     #menu {
         position: relative;
-
 
         li {
             display: block;
