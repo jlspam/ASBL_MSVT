@@ -1,119 +1,228 @@
+//////////// IMPORT \\\\\\\\\\\\
+
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Patrick+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
 
+//////////// FAUX SELECTORS \\\\\\\\\\\\
+
+%img {
+    display: block;
+    margin: auto;
+    width: 500px;
+}
+
+//////////// VARIABLES \\\\\\\\\\\\
+
+$primarycolor: #1E7318;
+$primarycolordark : #0e5818;
+$primarycolorbright : #209940;
+
+//////////// SCSS GENERAL \\\\\\\\\\\\
+
 body {
 
     font-family: 'Cabin', sans-serif;
-    background-image: url("/pic/bg2.png");
+    background-image: url("/pic/bg2.png"), url("/pic/bg1.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/************************ HEADER ************************/
+
+/* MENU PRINCIPAL */
+
+.Menu {
+    background: linear-gradient(to bottom, $primarycolorbright, $primarycolordark);
+    color: #FFF;
+    height: 50px;
+    padding-left: 25px;
+    border-radius: 28px;
+    position: fixed;
+    width: 97%;
+    z-index: 99;
+
+    ul {
+        width: 100%;
+    }
+
+    li {
+        float: left;
+        display: inline;
+        position: relative;
+
+        a:hover {
+            color: #fcc100;
+            background: #FFF;
+            border-radius: 3px;
+        }
+
+        &:hover ul.sub-menus {
+            display: block
+        }
+    }
+
+    ul,
+    li {
+        margin: 0 auto;
+        padding: 0;
+        list-style: none
+    }
+
+    a {
+
+        display: block;
+        line-height: 50px;
+        padding: 0 20px;
+        text-decoration: none;
+        color: #FFF;
+        font-size: 25px;
+        font-family: 'Mouse Memoirs', sans-serif;
+        letter-spacing: 1px;
+    }
+
+    a.dropdown-arrow:after {
+        margin-left: 50px;
+    }
+
+    input {
+        display: none;
+        margin: 0;
+        padding: 0;
+        height: 50px;
+        width: 100%;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    ul.sub-menus {
+        height: auto;
+        overflow: hidden;
+        width: 220px;
+        background: $primarycolor;
+        position: absolute;
+        z-index: 99;
+        display: none;
+        border-radius: 3px;
+
+        li {
+            display: block;
+            width: 100%;
+        }
+
+        a {
+            color: #FFF;
+            font-size: 20px;
+
+            &:hover {
+                background: #FFF;
+                color: $primarycolor
+            }
+        }
+    }
+
+    .NavRight {
+        position: absolute;
+        left: 1150px;
+        width: 50%;
+
+        img {
+            width: 25px;
+            position: relative;
+            top: 7px;
+        }
+    }
+}
+
+.Logo img {
+    @extend %img;
+    padding-top: 100px;
 }
 
 h1 {
     text-align: center;
-    font-size: 150%;
+    font-size: 30px;
     padding-bottom: 20px;
     font-family: 'Patrick Hand', cursive;
     letter-spacing: 0.5px;
     padding-top: 10px;
 
     span {
-        color: #1E7318;
+        color: $primarycolor;
     }
 }
 
 h2 {
 
+    padding-top: 15px;
     text-decoration: underline;
     text-indent: 15px;
 
 }
 
-.historique .pres {
+.Presentation {
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: justify;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.historique {
+    @extend .Presentation;
 
     #historique1 {
+
         padding-top: 70px;
-        @extend .presentation;
+        margin-top: 0;
     }
 
     #historique2 {
         padding-top: 15px;
-        @extend .presentation;
+
     }
 
     p {
-
-        @extend .presentation;
-        line-height: 24px;
+        @extend .Presentation;
     }
 
-    p #histo1 {
+    p:last-child {
 
-        @extend .presentation;
+        padding-bottom: 30px;
+    }
+
+    #histo1 {
         float: right;
-        padding-top: 25px;
+        padding-left: 50px;
+        margin-bottom: 15px;
+        margin-right: 80px;
         width: 300px;
-
     }
 
     p #histo2 {
-
-        @extend .presentation;
         float: left;
         width: 250px;
+        margin-bottom: 15px;
+        margin-right: 50px;
     }
 
     p #histo3 {
-
-        @extend .presentation;
         float: right;
         width: 250px;
-    }
-
-    p span {
-
-        text-transform: capitalize;
+        margin-left: 50px;
     }
 
     ol li {
-
-        @extend .presentation;
         margin-top: 10px;
-        line-height: 24px;
         margin-left: 80px;
         margin-right: 25px;
     }
 }
 
-#event {
-
-    text-align: center;
-    padding-top: 15px;
-}
-
-.logo img {
-
-    display: block;
-    margin: auto;
-    padding-top: 70px;
-
-}
-
-.img img {
-
-    display: block;
-    margin: auto;
+.Img img {
+    @extend %img;
     padding-top: 30px;
 
-}
-
-.presentation {
-    margin-left: 80px;
-    margin-right: 80px;
-    text-align: justify;
-    /* margin-left: 50px; */
 }
 
 .Centre {
@@ -121,27 +230,27 @@ h2 {
     padding-top: 15px;
 }
 
-.GreenButton {
-    box-shadow: inset 0px 1px 3px 0px #209940;
-    background: linear-gradient(to bottom, #64BF62 5%, #1E7318 100%);
-    background-color: #10722a;
+.GreenBtn {
+    box-shadow: inset 0px 1px 3px 0px $primarycolorbright;
+    background: linear-gradient(to bottom, $primarycolorbright 5%, $primarycolordark 100%);
+    background-color: $primarycolor;
     border-radius: 5px;
-    border: 1px solid #11691c;
+    border: 1px solid $primarycolordark;
     display: inline-block;
     cursor: pointer;
-    color: #ffffff;
+    color: #fff;
     font-family: Arial;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     padding: 11px 23px;
     text-decoration: none;
-    text-shadow: 0px -1px 0px #2f6627;
+    text-shadow: 0px -1px 0px $primarycolordark;
     text-align: center;
     margin: auto;
 
     &:hover {
-        background: linear-gradient(to bottom, #10722a 5%, #209940 100%);
-        background-color: #10722a;
+        background: linear-gradient(to bottom, $primarycolordark 5%, $primarycolorbright 100%);
+        background-color: $primarycolordark;
     }
 
     &:active {
@@ -162,138 +271,108 @@ h2 {
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     opacity: 0.9;
+    width: 700px;
+    height: 200px;
+
+    &:hover {
+        opacity: 0.7;
+    }
 
 }
 
 .act-list {
 
-    line-height: 25px;
+    @extend .Presentation;
     list-style-image: url("../pic/Icon/list-style.png");
 
     a {
         text-decoration: underline;
-        color: #0c4613;
+        line-height: 25px;
+        color: $primarycolordark;
     }
 }
 
-/************************ HEADER ************************/
+.Actus {
+    @extend .Presentation;
+    margin: 0 auto;
+    width: 100%;
+}
 
-/* MENU PRINCIPAL */
+// FOOTER
 
-#menu {
-    background: linear-gradient(to bottom, #49af47, #176d11);
-    color: #FFF;
-    height: 42px;
-    padding-left: 18px;
-    border-radius: 28px;
-    position: fixed;
-    width: 97%;
-    z-index: 99;
+footer {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#e5f1d7, #b5bbbea6);
+    color: $primarycolor;
+}
 
-    ul {
-        width: 100%;
-    }
+hr {
 
-    li {
-        float: left;
-        display: inline;
-        position: relative;
+    height: 2px;
+    border: 0;
+    background: linear-gradient(#d3d7db, #b5bbbea6);
+    box-shadow: 10px 10px 10px -10px #c7cdd3 inset;
+    margin: 0 auto;
+}
 
-        a:hover {
-            color: #fcc100;
-            background: #F2F2F2;
-            border-radius: 3px;
-        }
 
-        &:hover ul.sub-menus {
-            display: block
-        }
-    }
+.tftable {
+    font-size: 18px;
+    color: #000000;
+    width: 75%;
+    border: none;
 
-    ul,
-    li {
-        margin: 0 auto;
-        padding: 0;
-        list-style: none
-    }
-
-    a {
-
-        display: block;
-        line-height: 42px;
-        padding: 0 14px;
-        text-decoration: none;
-        color: #FFFFFF;
-        font-size: 18px;
-        font-family: 'Mouse Memoirs', sans-serif;
-        letter-spacing: 1px;
-    }
-
-    a.dropdown-arrow:after {
-        content: "\23F7";
-        margin-left: 5px;
-    }
-
-    input {
-        display: none;
-        margin: 0;
-        padding: 0;
-        height: 36px;
-        width: 100%;
-        opacity: 0;
-        cursor: pointer;
-    }
-
-    label {
-        display: none;
-        line-height: 36px;
+    th {
+        font-size: 17px;
+        width: 33%;
         text-align: center;
-        position: absolute;
-        left: 35px
-    }
-
-    ul.sub-menus {
-        height: auto;
-        overflow: hidden;
-        width: 170px;
-        background: #1E7318;
-        position: absolute;
-        z-index: 99;
-        display: none;
-        border-radius: 3px;
-
-        li {
-            display: block;
-            width: 100%;
-        }
-
-        a {
-            color: #FFFFFF;
-            font-size: 16px;
-
-            &:hover {
-                background: #E3FFE0;
-                color: #1E7318;
-            }
-        }
-    }
-
-    label:before {
-        font-size: 1.6em;
-        content: "\2261";
-        margin-left: 20px;
-    }
-
-    .navright {
-        position: absolute;
-        left: 950px;
-        width: 50%;
+        border: none;
+        border-radius: 10px 10px 0 0;
+        color: $primarycolor;
 
         img {
-            width: 25px;
-            position: relative;
-            top: 7px;
+            padding-top: 20px;
+            padding-bottom: 4px;
+            width: 35px;
         }
+    }
+
+    tr {
+        width: 33%;
+        border: none;
+        width: 500px;
+    }
+
+    td {
+        font-size: 15px;
+        padding: 0;
+        width: 33%;
+        border: none;
+        text-align: center;
+        border-radius: 0 0 10px 10px;
+        line-height: 20px;
+
+        img {
+            display: inline;
+            margin: 2px 5px;
+
+            &:nth-child(5) {
+
+                margin-bottom: 25px;
+                margin-left: 20px;
+            }
+
+            &:nth-child(6) {
+
+                margin-bottom: 20px;
+            }
+        }
+
+    }
+
+    tfoot tr td {
+        font-size: 13px;
     }
 }
 
@@ -310,7 +389,7 @@ h2 {
         }
 
         ul {
-            background: #1E7318;
+            background: $primarycolor;
             position: absolute;
             top: 100%;
             right: 0;
@@ -322,12 +401,7 @@ h2 {
             border-radius: 7px;
         }
 
-        input:checked+label {
-            color: white
-        }
-
-        input,
-        label {
+        input {
             position: absolute;
             top: 0;
             left: 0;
@@ -351,13 +425,4 @@ h2 {
             }
         }
     }
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    background-color: #e8ebee;
-    color: #1E7318;
-    border-radius: 15px;
 }

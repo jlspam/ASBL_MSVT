@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,IE=Chrome">
@@ -11,50 +12,51 @@
         <link rel="shortcut icon"
             href="Pic/logo_MSVT.png" type="png">
         <link rel="stylesheet" href="Style.css">
-
         <title>ASBL "Maison des Science sde la Vie et de la Terre</title>
- </head>
+    </head>
+
     <body>
         <header>
-            <nav id='menu'>
-                <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
-                <ul>
-                    <li><a href='Main.html'>Accueil</a></li>
-                    <li><a class='dropdown-arrow' href='#'>Nos activités</a>
-                        <ul class='sub-menus'>
-                            <li><a href='Activites/Activite_sco.html'>Activités Scolaires</a></li>
-                            <li><a href='Activites/Actvite_ext.html'>Activités Extra-scolaires</a></li>
-                            <li><a href='Activites/Activite_vis.html'>Visites des carrières</a></li>
-                        </ul>
-                    </li>
-                    <li><a href='Res.html'>Réservations</a></li>
-                    <li><a href='Infos.html'>Infos pratiques</a></li>
-                    <li><a href='Contact.html'>Contact</a></li>
-                    <li><a href='Galerie.html'>Galerie</a></li>
-                    <li><a href='Newsletter'>Newsletter</a></li>
-                </ul>
-                <ul class="navright">
-                    <li><a href="Contact.html" target="blank" title="Contact"> <img src="pic/Icon/mail.png" border="0" /></a></li>
-                    <li><a href="https://www.google.com/maps/place/ASBL+Maison+des+Sciences+de+la+Vie+et+de+la+Terre/@50.4756729,3.9985758,15z/data=!4m5!3m4!1s0x0:0xf65e28c2833d9182!8m2!3d50.4756793!4d3.9985818" target="blank" title="Map"> <img src="pic/Icon/map.png" border="0" /></a></li>
-                    <li><a href="https://www.youtube.com/channel/UC6ej0-vJHTNis-bdzhBvzLg" target="blank" title="Youtube"> <img src="pic/Icon/yt.png" border="0" /></a></li>
-                    <li><a href="https://www.instagram.com/asbl_msvt/" target="blank" title="Instagram"> <img src="pic/Icon/insta.png" border="0" /></a></li>
-                </ul>
+            <nav class='Menu'>
+                <input type='checkbox' onclick='updatemenu()'>
+                    <ul>
+                        <li><a href='Main.html'>Accueil</a></li>
+                        <li><a class='dropdown-arrow' href='#'>Nos activités</a>
+                            <ul class='sub-menus'>
+                                <li><a href='Activites/Activite_sco.html'>Activités Scolaires</a></li>
+                                <li><a href='Activites/Actvite_ext.html'>Activités Extra-scolaires</a></li>
+                                <li><a href='Activites/Activite_vis.html'>Visites des carrières</a></li>
+                            </ul>
+                        </li>
+                        <li><a href='Res.html'>Réservations</a></li>
+                        <li><a href='Infos.html'>Infos pratiques</a></li>
+                        <li><a href='Contact.html'>Contact</a></li>
+                        <li><a href='Galerie.html'>Galerie</a></li>
+                        <li><a href='Newsletter'>Newsletter</a></li>
+                    </ul>
+                    <ul class="NavRight">
+                        <li><a href="Contact.html" target="blank" title="Contact"> <img src="pic/Icon/mail.png"></a></li>
+                        <li><a href="https://www.google.com/maps/place/ASBL+Maison+des+Sciences+de+la+Vie+et+de+la+Terre/@50.4756729,3.9985758,15z/data=!4m5!3m4!1s0x0:0xf65e28c2833d9182!8m2!3d50.4756793!4d3.9985818" target="blank" title="Map"> <img src="pic/Icon/map.png"></a></li>
+                        <li><a href="https://www.youtube.com/channel/UC6ej0-vJHTNis-bdzhBvzLg" target="blank" title="Youtube"><img src="pic/Icon/yt.png"></a></li>
+                        <li><a href="https://www.instagram.com/asbl_msvt/" target="blank" title="Instagram"><img src="pic/Icon/insta.png"></a></li>
+                    </ul>
             </nav>
         </header>
+
         <!-- LOGO d'en-tête -->
-        <div class="logo">
+        <div class="Logo">
             <img src="pic/logo_MSVT.png" alt="Logo de l'ASBL" width="350" id="logo1">
         </div>
-            <h1> 
+        <!-- Titre -->        
+            <h1>
                 <span>A</span>nimations scolaires - 
                 <span>A</span>teliers nature -
                 <span>E</span>xposition biodiversité - 
                 <span>V</span>isites guidées -
                 <span>S</span>tages 
             </h1>
-        <!-- Présentation -->
-        <section class="presentation">
-            <div id="pres">
+        <!-- Texte de Présentation -->
+            <div class="Presentation">
                 <h2>Notre objectif :</h2>
                 <p>
                     L'ASBL <strong>"Maison des Sciences de la Vie et de la Terre"</strong>
@@ -75,62 +77,51 @@
                     environnement unique !
                 </p>
             </div>
-        <div class="Centre">
-            <a href="Historique.html" class="GreenButton">En savoir plus</a>
-        </div>
-            <div class="img">
-                <img src="pic/Paysage1.jpg" alt="Paysage de la carrière" width="500" height="180" id="paysage1">
+        <!-- Bouton "En savoir plus" -->
+            <div class="Centre">
+                <a href="Historique.html" class="GreenBtn">En savoir plus</a>
             </div>
-        </section>
-        <section class="presentation">
-            <div class="activites">
-                <h2>Nos activités :</h2>
+        <!-- Image carrière -->
+            <div class="Img">
+                <img src="pic/Paysage1.jpg" alt="Paysage de la carrière" id="paysage1">
+            </div>
+        <!-- Présentation des activités -->
+        <div class="act-list">
+            <h2>Nos activités :</h2>  
                 <p>
                 Notre ASBL vous propose de nombreuses <strong> activités :</strong>
                     <ul>
-                        <li class="act-list">Une multitude d'<a href='Activites/Activite_sco.html'>activités scolaires</a> sur le thème des sciences, de la nature et de l'environnement.</li>
-                        <li class="act-list">Des <a href='Activites/Actvite_ext.html'>activités extra-scolaires</a> pour petits et grands.</li>
-                        <li class="act-list">Plusieurs <a href='Activites/Activite_vis.html'>visite guidées des anciennes carrières</a> sur des thématiques nature différentes.</li>
+                        <li>Une multitude d'<a href='Activites/Activite_sco.html'>activités scolaires</a> sur le thème des sciences, de la nature et de l'environnement.</li>
+                        <li>Des <a href='Activites/Actvite_ext.html'>activités extra-scolaires</a> pour petits et grands.</li>
+                        <li>Plusieurs <a href='Activites/Activite_vis.html'>visite guidées des anciennes carrières</a> sur des thématiques nature différentes.</li>
                     </ul>
                 </p>
-            </div>
-            <div class="Centre">
-                <a href="Historique.html" class="GreenButton">En savoir plus</a>
-            </div>
-        </section>
-        <section class="dernieres_actus">
-            <h2 id="event">Évenements 2022-2023</h2>
-        
-        </section>
-
-        <footer>
-            <style type="text/css">
-                .tftable {font-size:14px;color:#000000;width:75%; border:none;}
-                .tftable th {font-size:13px;width:33%;text-align:center;border:none;border-radius: 10px 10px 0 0; padding-bottom: 10px;color:#1b6616;}
-                .tftable th img {padding-top: 10px; padding-bottom: 15px; width: 30px;}
-                .tftable tr {width:33%;border:none;width:500px;}
-                .tftable td {font-size:11px;padding:0;width:33%;border:none;text-align:center;border-radius: 0 0 10px 10px;line-height:20px ; }
-                .tftable tfoot tr td {font-size:9px;}
-
-                </style>
-                <table class="tftable" border:none;>
+        </div>
+        <div class="Centre">
+            <a href="Activities.html" class="GreenBtn">En savoir plus</a>
+        </div>
+        <div class="Actus">
+            <h2>Évenements 2022-2023</h2>
+            <hr>
+            <footer>
+                <table class="tftable">
                 <thead>
                     <tr>
-                    <th><img src="./pic/Icon/foot1.png" alt="Icone ouverture"><br>Heures d'ouverture :</th>
-                    <th><img src="./pic/Icon/foot2.png" alt="Icone ouverture"><br>Contact :</th>
-                    <th><img src="./pic/Icon/foot3.png" alt="Icone ouverture"><br>Avec le soutien de :</th>
+                        <th><img src="./pic/Icon/foot1.png" alt="Icone Ouverture"><br>Heures d'ouverture :</th>
+                        <th><img src="./pic/Icon/foot2.png" alt="Icone Contact"><br>Contact :</th>
+                        <th><img src="./pic/Icon/foot3.png" alt="Icone Partenaire"><br>Avec le soutien de :</th>
                     </tr>
                 </thead>
-                <tr>
-                    <td>Du lundi au vendredi :<br><strong>de 9h à 16h</strong><br> Samedi et Dimanche:<br><strong>Fermé</strong><br><br><br> </td>
-                    <td>31, Rue d'empire - 7034, Obourg<br> 065/84 40 65<br>0479/97 07 59<br>info@msvt.be<br><a href="https://www.msvt.be">Site internet</a><br><br> </td>
-                    <td><img src="./pic/logo_part/part1.png" alt="Icone ouverture" width="45px">
-                        <img src="./pic/logo_part/part2.png" alt="Icone ouverture" width="85px"> 
-                        <img src="./pic/logo_part/part3.png" alt="Icone ouverture" width="55px"> 
-                        <img src="./pic/logo_part/part4.png" alt="Icone ouverture" width="35px"> 
-                        <img src="./pic/logo_part/part5.png" alt="Icone ouverture" width="75px">
-                        <img src="./pic/logo_part/part6.png" alt="Icone ouverture" width="35px"> 
-                        <img src="./pic/logo_part/part7.png" alt="Icone ouverture" width="75px"> 
+                    <tr>
+                        <td>Du lundi au vendredi :<br><strong>de 9h à 16h</strong><br> Samedi et Dimanche:<br><strong>Fermé</strong><br><br><br> </td>
+                        <td>31, Rue d'empire - 7034, Obourg<br> 065/84 40 65<br>0479/97 07 59<br>info@msvt.be<br><a href="https://www.msvt.be">Site internet</a><br><br> </td>
+                        <td>
+                            <img src="./pic/logo_part/part1.png" alt="logo1" width="55px">
+                            <img src="./pic/logo_part/part2.png" alt="logo2" width="100px"> 
+                            <img src="./pic/logo_part/part3.png" alt="logo3" width="95px"> 
+                            <img src="./pic/logo_part/part4.png" alt="logo4" width="60px"> 
+                            <img src="./pic/logo_part/part5.png" alt="logo5" width="75px">
+                            <img src="./pic/logo_part/part7.png" alt="logo6" width="115px"> 
                     </td>
                 </tr>
                 <tfoot>
@@ -140,5 +131,7 @@
                 </tfoot>
                 </table>
              </footer>
+             <hr>
+        </div>
     </body>
 </html>

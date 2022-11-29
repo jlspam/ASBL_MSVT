@@ -11,13 +11,13 @@
         <link rel="shortcut icon"
             href="Pic/logo_MSVT.png" type="png">
         <link rel="stylesheet" href="Style.css">
-
         <title>Historique</title>
- </head>
+    </head>
+    
     <body>
         <header>
-            <nav id='menu'>
-                <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <nav class='Menu'>
+                <input type='checkbox' onclick='updatemenu()'>
                 <ul>
                     <li><a href='Main.html'>Accueil</a></li>
                     <li><a class='dropdown-arrow' href='#'>Nos activités</a>
@@ -33,21 +33,19 @@
                     <li><a href='Galerie.html'>Galerie</a></li>
                     <li><a href='Newsletter'>Newsletter</a></li>
                 </ul>
-                <ul class="navright">
-                    <li><a href="Contact.html" target="blank" title="Contact"> <img src="pic/Icon/mail.png" border="0" /></a></li>
-                    <li><a href="https://www.google.com/maps/place/ASBL+Maison+des+Sciences+de+la+Vie+et+de+la+Terre/@50.4756729,3.9985758,15z/data=!4m5!3m4!1s0x0:0xf65e28c2833d9182!8m2!3d50.4756793!4d3.9985818" target="blank" title="Map"> <img src="pic/Icon/map.png" border="0" /></a></li>
-                    <li><a href="https://www.youtube.com/channel/UC6ej0-vJHTNis-bdzhBvzLg" target="blank" title="Youtube"> <img src="pic/Icon/yt.png" border="0" /></a></li>
-                    <li><a href="https://www.instagram.com/asbl_msvt/" target="blank" title="Instagram"> <img src="pic/Icon/insta.png" border="0" /></a></li>
+                <ul class="NavRight">
+                    <li><a href="Contact.html" target="blank" title="Contact"><img src="pic/Icon/mail.png"></a></li>
+                    <li><a href="https://www.google.com/maps/place/ASBL+Maison+des+Sciences+de+la+Vie+et+de+la+Terre/@50.4756729,3.9985758,15z/data=!4m5!3m4!1s0x0:0xf65e28c2833d9182!8m2!3d50.4756793!4d3.9985818" target="blank" title="Map"><img src="pic/Icon/map.png"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC6ej0-vJHTNis-bdzhBvzLg" target="blank" title="Youtube"><img src="pic/Icon/yt.png"></a></li>
+                    <li><a href="https://www.instagram.com/asbl_msvt/" target="blank" title="Instagram"><img src="pic/Icon/insta.png"></a></li>
                 </ul>
             </nav>
         </header>
 
-        <!-- Présentation -->
-        <section class="historique">
-            <div class="pres">
+           <div class="historique">
                 <h2 id="historique1">Historique</h2>
                 <p> 
-                    <strong> La Maison des Sciences de la Vie et de la Terre</strong> est née suite au réaménagement des carrières d’Obourg.
+                    <strong>La Maison des Sciences de la Vie et de la Terre</strong> est née suite au réaménagement des carrières d’Obourg.
                 </p>
                 <p> Un premier pôle a vu le jour en 2001 avec la construction du <strong>Jardin Géologique</strong>, 
                     complété en 2008 par <strong>la Maison des sciences de la Vie et de la Terre</strong> (anciennement Maison de la Biodiversité). 
@@ -67,8 +65,8 @@
                     d’exploitation « à ciel ouvert » et face aux <strong>potentialités biologiques</strong> et aux
                     <strong>richesses fossilifères</strong> de ces espaces. Holcim se positionne finalement 
                     en faveur de <strong>la valorisation</strong> de ces richesses naturelles et de la création de la biodiversité.
-                    <img src="./pic/Carriere/histo1.jpg" alt="Photo ancienne des carrières" id="histo1">
                 </p>
+                <img src="./pic/Carriere/histo1.jpg" alt="Photo ancienne des carrières" id="histo1">
                 <p> 
                     Parallèlement, l’exposition de 1993 <strong>« Nature et Ressources Naturelles dans le Bassin de Mons »</strong> fut 
                     inaugurée à «l’Espace Terre et Matériaux » de la Faculté Polytechnique de Mons. 
@@ -114,9 +112,39 @@
                 D'autres travaux ont également vu le jour avec notamment <strong>un dessouchage massif des buddleias</strong> en vue d'une réhabilitation des 
                 hirondelles de rivage, présentes il y a encore quelques années au sein de nos carrières.
                 </p>
-
+            </div>
+            <hr>
                 <footer>
-
-        </footer>
+                    <table class="tftable">
+                        <thead>
+                            <tr>
+                                <th><img src="./pic/Icon/foot1.png" alt="Icone ouverture"><br>Heures d'ouverture :</th>
+                                <th><img src="./pic/Icon/foot2.png" alt="Icone ouverture"><br>Contact :</th>
+                                <th><img src="./pic/Icon/foot3.png" alt="Icone ouverture"><br>Avec le soutien de :</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Du lundi au vendredi :<br><strong>de 9h à 16h</strong><br> Samedi et Dimanche:<br><strong>Fermé</strong><br><br><br> </td>
+                                <td>31, Rue d'empire - 7034, Obourg<br> 065/84 40 65<br>0479/97 07 59<br>info@msvt.be<br><a href="https://www.msvt.be">Site internet</a><br><br> </td>
+                                <td>
+                                    <img src="./pic/logo_part/part1.png" alt="Icone ouverture" width="45px">
+                                    <img src="./pic/logo_part/part2.png" alt="Icone ouverture" width="85px"> 
+                                    <img src="./pic/logo_part/part3.png" alt="Icone ouverture" width="55px"> 
+                                    <img src="./pic/logo_part/part4.png" alt="Icone ouverture" width="35px"> 
+                                    <img src="./pic/logo_part/part5.png" alt="Icone ouverture" width="75px">
+                                    <img src="./pic/logo_part/part6.png" alt="Icone ouverture" width="35px"> 
+                                    <img src="./pic/logo_part/part7.png" alt="Icone ouverture" width="75px"> 
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3"> Plan du site - Terms of Services © 2021-22 - ASBL "La Maison des Sciences de la Vie et et de la Terre" - Tous droits réservés</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </footer>
+            <hr>
     </body>
 </html>
